@@ -1,5 +1,3 @@
-Ciao ragazzi,
-Esercizio di oggi: Vite Rick and Morty
 nome repo: vite-rick-morty
 
 Descrizione:

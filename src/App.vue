@@ -3,7 +3,7 @@ import axios from "axios";
 
 import AppHeader from "./components/AppHeader.vue";
 import AppCards from "./components/AppCard.vue";
-import CardsList from "./components/CardsList.vue"
+import CardsList from "./components/CardsList.vue";
 
 export default {
   components: {
@@ -12,15 +12,20 @@ export default {
     CardsList,
   },
   data() {
-    return {};
+    return {
+      cardsArray: [],
+    };
   },
   created() {
     axios
       .get("https://rickandmortyapi.com/api/character", {
-        params: {},
+        params: {
+          num: 20,
+          offset: 0,
+        },
       })
       .then((resp) => {
-        this.cardArray = resp.data.data;
+        this.cardsArray = resp.data.data;
       });
   },
 };
@@ -28,7 +33,7 @@ export default {
 
 <template>
   <AppHeader />
-  <AppCards />
+  <CardsList :cardsArray="cardsArray" />
 </template>
 
 <style lang="scss"></style>
