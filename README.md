@@ -1,11 +1,13 @@
-nome repo: vite-rick-morty
+# `vite-rick-morty`
 
-Descrizione:
-Create un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necessari per strutturare il layout come da screenshot allegato.
-Al caricamento della pagina, effettuate una chiamata all'API di Rick and Morty:
-https://rickandmortyapi.com/api/character
+#### Descrizione:
+- Create un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necessari per strutturare il layout come da screenshot allegato.
 
-Potete consultare la documentazione completa di API qui: https://rickandmortyapi.com/documentation
+- Al caricamento della pagina, effettuate una chiamata all'API di Rick and Morty:
+`https://rickandmortyapi.com/api/character`
 
-Bonus:
+**DOCS** dell'API:
+- `https://rickandmortyapi.com/documentation`
+
+**Bonus:**
 Creare un componente loader da visualizzare fintantoché i risultati non sono pronti.

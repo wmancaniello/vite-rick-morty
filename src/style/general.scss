@@ -1,1 +1,14 @@
 @import "bootstrap/scss/bootstrap";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+#app {
+  background-image: url("https://e0.pxfuel.com/wallpapers/618/125/desktop-wallpaper-starry-sky-stars-milky-way-galaxy-1440p-resolution-space-and-background.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+}

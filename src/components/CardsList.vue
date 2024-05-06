@@ -8,16 +8,14 @@ export default {
   props: {
     cardsArray: Array,
   },
-  data() {
-    return {};
-  },
 };
 </script>
 
 <template>
   <div class="container">
+    <h1 class="text-center">Rick and Morty App</h1>
     <div class="row row-cols-4">
-      <div v-for="card in cardsArray" class="col">
+      <div v-for="card in cardsArray" :key="card.id" class="col">
         <AppCard :cardObj="card" />
       </div>
     </div>

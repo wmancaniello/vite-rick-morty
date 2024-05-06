@@ -2,13 +2,12 @@
 import axios from "axios";
 
 import AppHeader from "./components/AppHeader.vue";
-import AppCards from "./components/AppCard.vue";
 import CardsList from "./components/CardsList.vue";
 
 export default {
   components: {
     AppHeader,
-    AppCards,
+
     CardsList,
   },
   data() {
@@ -17,16 +16,9 @@ export default {
     };
   },
   created() {
-    axios
-      .get("https://rickandmortyapi.com/api/character", {
-        params: {
-          num: 20,
-          offset: 0,
-        },
-      })
-      .then((resp) => {
-        this.cardsArray = resp.data.data;
-      });
+    axios.get("https://rickandmortyapi.com/api/character").then((resp) => {
+      this.cardsArray = resp.data.results;
+    });
   },
 };
 </script>
